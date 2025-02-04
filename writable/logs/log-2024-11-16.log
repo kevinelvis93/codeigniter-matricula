@@ -1,0 +1,468 @@
+CRITICAL - 2024-11-16 00:34:25 --> Call to undefined method App\Models\LoginModel::buscarUsuario
+#0 C:\xampp\htdocs\sistema\app\Controllers\LoginController.php(26): CodeIgniter\Model->__call('buscarUsuario', Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\LoginController->autenticar()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-16 01:45:24 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(31): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:45:25 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(31): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:48:53 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(31): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(76): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(52): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:50:03 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(34): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:52:14 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 1, false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 1)
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:52:15 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 1, false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 1)
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:52:15 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 1, false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 1)
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:52:15 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 1, false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 1)
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:56:20 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Menu...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Menu...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(41): spl_autoload_call('App\\Models\\Menu...')
+#4 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-16 01:56:21 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Menu...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Menu...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(41): spl_autoload_call('App\\Models\\Menu...')
+#4 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-16 01:56:50 --> implode(): Invalid arguments passed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Inva...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(29): implode(',', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:56:51 --> implode(): Invalid arguments passed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Inva...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(29): implode(',', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:56:52 --> implode(): Invalid arguments passed
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'implode(): Inva...', 'C:\\xampp\\htdocs...', 29, Array)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(29): implode(',', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:59:54 --> array_map(): Expected parameter 2 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_map(): Ex...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(28): array_map('intval', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 01:59:55 --> array_map(): Expected parameter 2 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_map(): Ex...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(28): array_map('intval', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:01:03 --> array_map(): Expected parameter 2 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_map(): Ex...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(28): array_map('intval', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:01:09 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:01:25 --> El parámetro $roles no es un array.
+#0 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#1 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-11-16 02:06:19 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:06:21 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:06:40 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:06:41 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:06:41 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:06:42 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:06:42 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:06:58 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:06:59 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:06:59 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:06:59 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:07:30 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:09:49 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:09:49 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:09:50 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:09:50 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:09:53 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:10:46 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:10:47 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:10:47 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:10:47 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:10:47 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:10:48 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:10:48 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:10:48 --> whereIn() expects $values to be of type array or closure
+#0 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(731): CodeIgniter\Database\BaseBuilder->_whereIn('ccp_usuario_rol...', 'Comercial, Admi...', false, 'AND ', NULL)
+#1 C:\xampp\htdocs\sistema\app\Models\MenuModel.php(33): CodeIgniter\Database\BaseBuilder->whereIn('ccp_usuario_rol...', 'Comercial, Admi...')
+#2 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(48): App\Models\MenuModel->obtenerMenuPorRoles('Comercial, Admi...')
+#3 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(27): App\Controllers\BaseController->cargarMenu()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-16 02:14:48 --> Array to string conversion
+#0 C:\xampp\htdocs\sistema\app\Views\plantilla.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 9, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('plantilla', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(15): view('plantilla', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-16 02:22:17 --> syntax error, unexpected '<', expecting end of file
+#0 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#2 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(13): view('template/header', Array)
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-11-16 02:24:51 --> Undefined variable: session
+#0 C:\xampp\htdocs\sistema\app\Views\plantilla.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 4, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('plantilla', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(15): view('plantilla', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

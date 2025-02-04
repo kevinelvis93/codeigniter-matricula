@@ -1,0 +1,209 @@
+ERROR - 2024-11-20 14:58:19 --> Unknown column 'ccp_persona.dni' in 'where clause'
+CRITICAL - 2024-11-20 14:58:19 --> Unknown column 'ccp_persona.dni' in 'where clause'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ccp_usu...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ccp_usu...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ccp_usu...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ccp_usu...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\LoginModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\LoginController.php(24): App\Models\LoginModel->buscarUsuario('dvsdvsdv')
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\LoginController->autenticar()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-11-20 15:00:42 --> Unknown column 'ccp_persona.dni' in 'field list'
+CRITICAL - 2024-11-20 15:00:42 --> Unknown column 'ccp_persona.dni' in 'field list'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ccp_usu...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ccp_usu...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ccp_usu...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ccp_usu...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(18): App\Models\ColaboradorModel->obtenerUsuariosActivos()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-20 15:02:38 --> Undefined index: dni
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(24): view('colaborador/ind...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-11-20 15:19:38 --> Table 'sistema_usuarios.ccp_rolsds' doesn't exist
+CRITICAL - 2024-11-20 15:19:38 --> Table 'sistema_usuarios.ccp_rolsds' doesn't exist
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id`, `n...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `n...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `n...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `n...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\FuncionModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(63): App\Models\FuncionModel->obtenerRoles()
+#6 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(30): App\Controllers\BaseController->cargarRoles()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrar()
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#9 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-11-20 15:27:35 --> Undefined index: id
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\registrar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/reg...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(37): view('colaborador/reg...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrar()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-20 15:45:29 --> syntax error, unexpected ''identificacion_descripcion'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-20 15:45:30 --> syntax error, unexpected ''identificacion_descripcion'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-20 17:43:29 --> Undefined index: dni
+#0 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 57, Array)
+#1 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(84): App\Models\ColaboradorModel->registrarColaborador(Array, Array, Array, Array)
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrarPost()
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-11-20 17:43:53 --> There is no data to insert.
+#0 C:\xampp\htdocs\sistema\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\sistema\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(81): CodeIgniter\Model->insert(Array)
+#3 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(84): App\Models\ColaboradorModel->registrarColaborador(Array, Array, Array, Array)
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrarPost()
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-20 17:45:40 --> There is no data to insert.
+#0 C:\xampp\htdocs\sistema\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\sistema\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(81): CodeIgniter\Model->insert(Array)
+#3 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(84): App\Models\ColaboradorModel->registrarColaborador(Array, Array, Array, Array)
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrarPost()
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-11-20 17:55:11 --> Duplicate entry '47923146' for key 'identificacion_descripcion_UNIQUE'
+CRITICAL - 2024-11-20 17:55:11 --> Duplicate entry '47923146' for key 'identificacion_descripcion_UNIQUE'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cc...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cc...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cc...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cc...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(82): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(84): App\Models\ColaboradorModel->registrarColaborador(Array, Array, Array, Array)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrarPost()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-20 18:03:20 --> in_array() expects parameter 2 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\sistema\app\Views\colaborador\registrar.php(23): in_array('1', '1')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/reg...', Array, true)
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(37): view('colaborador/reg...', Array)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrar()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-20 18:04:24 --> in_array() expects parameter 2 to be array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expe...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\sistema\app\Views\colaborador\registrar.php(23): in_array('1', '1')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/reg...', Array, true)
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(37): view('colaborador/reg...', Array)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrar()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-11-20 18:15:31 --> Duplicate entry 'fdurandg' for key 'usuario'
+CRITICAL - 2024-11-20 18:15:31 --> Duplicate entry 'fdurandg' for key 'usuario'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cc...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cc...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cc...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cc...', Array, false)
+#4 C:\xampp\htdocs\sistema\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\sistema\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\sistema\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(73): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(90): App\Models\ColaboradorModel->registrarColaborador(Array, Array, Array, Array)
+#9 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrarPost()
+#10 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#11 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2024-11-20 18:21:35 --> Duplicate entry 'fdurand@gmail.com' for key 'email'
+CRITICAL - 2024-11-20 18:21:35 --> Duplicate entry 'fdurand@gmail.com' for key 'email'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cc...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cc...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cc...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cc...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(94): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(90): App\Models\ColaboradorModel->registrarColaborador(Array, Array, Array, Array)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrarPost()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-11-20 18:23:57 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2024-11-20 18:23:57 --> Unknown column 'email' in 'where clause'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sistema\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\system\Validation\Validation.php(292): CodeIgniter\Validation\Rules->is_unique('55555555', 'email', Array, NULL)
+#6 C:\xampp\htdocs\sistema\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('identificacion_...', 'identificacion_...', '55555555', Array, Array)
+#7 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(76): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrarPost()
+#9 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#10 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-11-20 18:24:30 --> Argument 1 passed to CodeIgniter\Validation\FormatRules::valid_email() must be of the type string or null, array given, called in C:\xampp\htdocs\sistema\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\sistema\system\Validation\Validation.php(291): CodeIgniter\Validation\FormatRules->valid_email(Array, NULL)
+#1 C:\xampp\htdocs\sistema\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('emails', 'emails', Array, Array, Array)
+#2 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(76): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrarPost()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-11-20 18:26:28 --> Argument 1 passed to CodeIgniter\Validation\FormatRules::valid_email() must be of the type string or null, array given, called in C:\xampp\htdocs\sistema\system\Validation\Validation.php on line 291
+#0 C:\xampp\htdocs\sistema\system\Validation\Validation.php(291): CodeIgniter\Validation\FormatRules->valid_email(Array, NULL)
+#1 C:\xampp\htdocs\sistema\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('emails', 'emails', Array, Array, Array)
+#2 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(75): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->registrarPost()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

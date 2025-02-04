@@ -1,0 +1,255 @@
+CRITICAL - 2024-11-13 10:48:13 --> syntax error, unexpected ';', expecting ')'
+#0 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-13 10:50:25 --> syntax error, unexpected ',', expecting ';'
+#0 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-13 10:53:41 --> Class 'App\Controllers\BaseController' not found
+#0 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 17:26:41 --> Undefined variable: user
+#0 C:\xampp\htdocs\sistema\app\Controllers\LoginController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\LoginController->autenticar()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-13 19:46:16 --> Class 'App\Controllers\MenuModel' not found
+#0 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(51): App\Controllers\BaseController->cargarMenu()
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-13 19:46:52 --> Undefined index: icono
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(13): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 19:46:53 --> Undefined index: icono
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(13): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:06:34 --> Undefined index: nombre
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(13): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:07:05 --> Undefined index: nombre
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(13): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:07:07 --> Undefined index: nombre
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(13): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:07:07 --> Undefined index: nombre
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(13): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:07:08 --> Undefined index: nombre
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(13): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:07:08 --> Undefined index: nombre
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(13): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:10:10 --> Undefined variable: menu
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\LoginController.php(11): view('template/header')
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\LoginController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:18:51 --> Undefined variable: menu
+#0 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(52): App\Controllers\BaseController->cargarMenu()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-11-13 20:18:52 --> Undefined variable: menu
+#0 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(52): App\Controllers\BaseController->cargarMenu()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-11-13 20:18:52 --> Undefined variable: menu
+#0 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(52): App\Controllers\BaseController->cargarMenu()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-11-13 20:18:53 --> Undefined variable: menu
+#0 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(52): App\Controllers\BaseController->cargarMenu()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-11-13 20:19:33 --> Undefined variable: menu
+#0 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(52): App\Controllers\BaseController->cargarMenu()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-11-13 20:25:30 --> Undefined index: ruta
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\PlantillaController.php(13): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\PlantillaController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantillaController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:32:44 --> Undefined variable: menu
+#0 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 79, Array)
+#1 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(52): App\Controllers\BaseController->cargarMenu()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-11-13 20:35:53 --> Array to string conversion
+#0 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 75, Array)
+#1 C:\xampp\htdocs\sistema\app\Controllers\BaseController.php(52): App\Controllers\BaseController->cargarMenu()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(810): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-11-13 20:43:23 --> Undefined variable: menu
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\LoginController.php(11): view('template/header')
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\LoginController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:45:41 --> Undefined variable: menu
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\LoginController.php(11): view('template/header')
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\LoginController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:46:34 --> Undefined variable: menu
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\LoginController.php(11): view('template/header')
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\LoginController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-13 20:49:50 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\LoginController.php(11): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\LoginController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

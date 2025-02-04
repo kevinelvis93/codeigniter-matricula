@@ -1,0 +1,313 @@
+CRITICAL - 2024-11-22 16:14:57 --> Call to undefined method App\Models\ColaboradorModel::obtenerUsuariosActivos
+#0 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(18): CodeIgniter\Model->__call('obtenerUsuarios...', Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-22 16:16:17 --> Call to undefined method App\Models\ColaboradorModel::obtenerUsuariosActivos
+#0 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(18): CodeIgniter\Model->__call('obtenerUsuarios...', Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-22 16:16:18 --> Call to undefined method App\Models\ColaboradorModel::obtenerUsuariosActivos
+#0 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(18): CodeIgniter\Model->__call('obtenerUsuarios...', Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-22 16:16:18 --> Call to undefined method App\Models\ColaboradorModel::obtenerUsuariosActivos
+#0 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(18): CodeIgniter\Model->__call('obtenerUsuarios...', Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-22 16:16:19 --> Call to undefined method App\Models\ColaboradorModel::obtenerUsuariosActivos
+#0 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(18): CodeIgniter\Model->__call('obtenerUsuarios...', Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-22 16:17:21 --> Call to undefined method App\Models\ColaboradorModel::obtenerUsuariosActivos
+#0 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(18): CodeIgniter\Model->__call('obtenerUsuarios...', Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-22 16:17:22 --> Call to undefined method App\Models\ColaboradorModel::obtenerUsuariosActivos
+#0 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(18): CodeIgniter\Model->__call('obtenerUsuarios...', Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-22 16:19:14 --> Call to undefined method App\Models\ColaboradorModel::obtenerUsuariosConPaginacion
+#0 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(41): CodeIgniter\Model->__call('obtenerUsuarios...', Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->obtenerUsuarios()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-22 17:00:07 --> Call to undefined method App\Models\ColaboradorModel::buscarUsuarios
+#0 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(24): CodeIgniter\Model->__call('buscarUsuarios', Array)
+#1 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-22 17:01:05 --> Object of class CodeIgniter\Pager\Pager could not be converted to string
+#0 C:\xampp\htdocs\sistema\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#3 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(41): view('colaborador/ind...', Array)
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-22 17:01:36 --> Object of class CodeIgniter\Pager\Pager could not be converted to string
+#0 C:\xampp\htdocs\sistema\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#3 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(41): view('colaborador/ind...', Array)
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-22 17:01:44 --> Object of class CodeIgniter\Pager\Pager could not be converted to string
+#0 C:\xampp\htdocs\sistema\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#3 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(41): view('colaborador/ind...', Array)
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-22 17:03:51 --> Object of class CodeIgniter\Pager\Pager could not be converted to string
+#0 C:\xampp\htdocs\sistema\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#3 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(41): view('colaborador/ind...', Array)
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-11-22 17:04:47 --> Undefined variable: page
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\index.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(41): view('colaborador/ind...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-22 17:04:49 --> Undefined variable: page
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\index.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 70, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(41): view('colaborador/ind...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-11-22 17:05:28 --> Unknown column 'dni' in 'order clause'
+CRITICAL - 2024-11-22 17:05:28 --> Unknown column 'dni' in 'order clause'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ccp_usu...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ccp_usu...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ccp_usu...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ccp_usu...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(24): App\Models\ColaboradorModel->buscarUsuarios('', 'dni', 'ASC', 10, 1)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-11-22 17:08:21 --> Unknown column 'dni' in 'order clause'
+CRITICAL - 2024-11-22 17:08:21 --> Unknown column 'dni' in 'order clause'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ccp_usu...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ccp_usu...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ccp_usu...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ccp_usu...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(24): App\Models\ColaboradorModel->buscarUsuarios('', 'dni', 'ASC', 10, 1)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-11-22 17:08:45 --> Unknown column 'dni' in 'order clause'
+CRITICAL - 2024-11-22 17:08:45 --> Unknown column 'dni' in 'order clause'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ccp_usu...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ccp_usu...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ccp_usu...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ccp_usu...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(26): App\Models\ColaboradorModel->buscarUsuarios('', 'dni', 'ASC', 10, 0)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-11-22 17:08:57 --> Unknown column 'direcci�n' in 'order clause'
+CRITICAL - 2024-11-22 17:08:57 --> Unknown column 'direcci�n' in 'order clause'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ccp_usu...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ccp_usu...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ccp_usu...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ccp_usu...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(26): App\Models\ColaboradorModel->buscarUsuarios('', 'direcci\xEF\xBF\xBDn', 'ASC', 10, 0)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-11-22 17:09:17 --> Unknown column 'correos' in 'order clause'
+CRITICAL - 2024-11-22 17:09:17 --> Unknown column 'correos' in 'order clause'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ccp_usu...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ccp_usu...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ccp_usu...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ccp_usu...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(26): App\Models\ColaboradorModel->buscarUsuarios('', 'correos', 'ASC', 10, 0)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-11-22 17:09:23 --> Unknown column 'tel�fonos' in 'order clause'
+CRITICAL - 2024-11-22 17:09:23 --> Unknown column 'tel�fonos' in 'order clause'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ccp_usu...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ccp_usu...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ccp_usu...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ccp_usu...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(26): App\Models\ColaboradorModel->buscarUsuarios('', 'tel\xEF\xBF\xBDfonos', 'ASC', 10, 0)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-11-22 17:10:15 --> Unknown column 'apellidos' in 'order clause'
+CRITICAL - 2024-11-22 17:10:15 --> Unknown column 'apellidos' in 'order clause'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ccp_usu...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ccp_usu...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ccp_usu...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ccp_usu...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(26): App\Models\ColaboradorModel->buscarUsuarios('', 'apellidos', 'ASC', 10, 0)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-22 17:21:21 --> Undefined index: identificacion_descripcion
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\index.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(61): view('colaborador/ind...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-22 17:21:29 --> Undefined index: identificacion_descripcion
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\index.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(61): view('colaborador/ind...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-22 17:21:30 --> Undefined index: identificacion_descripcion
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\index.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(61): view('colaborador/ind...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-22 17:21:31 --> Undefined index: identificacion_descripcion
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\index.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/ind...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(61): view('colaborador/ind...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-11-22 17:24:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`direccion`, GROUP_CONCAT(DISTINCT ccp_rol.nombre SEPARATOR ", ") AS roles, ...' at line 1
+CRITICAL - 2024-11-22 17:24:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`direccion`, GROUP_CONCAT(DISTINCT ccp_rol.nombre SEPARATOR ", ") AS roles, ...' at line 1
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ccp_usu...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ccp_usu...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ccp_usu...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `ccp_usu...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(91): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(45): App\Models\ColaboradorModel->buscarUsuarios('melomedinakevin...', 'ccp_usuario.id', 'ASC', 10, 0)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-11-22 17:41:28 --> Undefined variable: header
+#0 C:\xampp\htdocs\sistema\app\Views\template\header.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 1, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('template/header', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(57): view('template/header', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-11-22 17:48:47 --> syntax error, unexpected '}', expecting end of file
+#0 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Pager')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Pager')
+#3 [internal function]: spl_autoload_call('Config\\Pager')
+#4 C:\xampp\htdocs\sistema\system\Config\Factories.php(136): class_exists('Config\\Pager')
+#5 C:\xampp\htdocs\sistema\system\Config\Factories.php(106): CodeIgniter\Config\Factories::locateClass(Array, 'Pager')
+#6 C:\xampp\htdocs\sistema\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#7 C:\xampp\htdocs\sistema\system\Config\Services.php(408): config('Pager')
+#8 C:\xampp\htdocs\sistema\system\Config\BaseService.php(248): CodeIgniter\Config\Services::pager(NULL, NULL, false)
+#9 C:\xampp\htdocs\sistema\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('pager', Array)
+#10 C:\xampp\htdocs\sistema\system\Config\Services.php(405): CodeIgniter\Config\BaseService::getSharedInstance('pager', NULL, NULL)
+#11 C:\xampp\htdocs\sistema\system\Config\BaseService.php(248): CodeIgniter\Config\Services::pager()
+#12 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(48): CodeIgniter\Config\BaseService::__callStatic('pager', Array)
+#13 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#14 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#15 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2024-11-22 17:48:56 --> Invalid file: App\Views\Pagers\bootstrap_pagination.php
+#0 C:\xampp\htdocs\sistema\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Views\\Pager...')
+#1 C:\xampp\htdocs\sistema\system\Pager\Pager.php(125): CodeIgniter\View\View->render('App\\Views\\Pager...')
+#2 C:\xampp\htdocs\sistema\system\Pager\Pager.php(110): CodeIgniter\Pager\Pager->displayLinks('default', 'default_full')
+#3 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(49): CodeIgniter\Pager\Pager->makeLinks(1, 10, 13)
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->index()
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
