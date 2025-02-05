@@ -182,4 +182,124 @@ class ColaboradorModel extends Model
 
         return $db->transStatus() ? $usuarioId : false;
     }
+
+    public function obtenerColaboradorPorId($id)
+    {
+        $db = \Config\Database::connect();
+        $builder = $db->table('ccp_usuario');
+        $builder->select('
+            ccp_usuario.id,
+            ccp_usuario.usuario,
+            ccp_usuario.estado,
+            ccp_persona.id AS persona_id,
+            ccp_persona.nombres,
+            ccp_persona.apellido_paterno,
+            ccp_persona.apellido_materno,
+            ccp_persona.direccion,
+            ccp_persona_identificacion.id_tipo_identificacion,
+            ccp_persona_identificacion.identificacion_descripcion
+        ');
+        $builder->join('ccp_persona', 'ccp_usuario.persona_id = ccp_persona.id', 'inner');
+        $builder->join('ccp_persona_identificacion', 'ccp_persona_identificacion.id_persona = ccp_persona.id', 'left');
+        $builder->where('ccp_usuario.id', $id);
+        $colaborador = $builder->get()->getRowArray();
+
+        if (!$colaborador) {
+            return null;
+        }
+
+        // Obtener correos electrónicos
+        $emails = $db->table('ccp_email')
+            ->select('email')
+            ->where('persona_id', $colaborador['persona_id'])
+            ->get()
+            ->getResultArray();
+        $colaborador['emails'] = array_map(fn($email) => $email['email'], $emails);
+
+        // Obtener teléfonos
+        $telefonos = $db->table('ccp_telefono')
+            ->select('numero')
+            ->where('persona_id', $colaborador['persona_id'])
+            ->get()
+            ->getResultArray();
+        $colaborador['telefonos'] = array_map(fn($telefono) => $telefono['numero'], $telefonos);
+
+        // Obtener roles correctamente
+        $roles = $db->table('ccp_usuario_rol')
+            ->select('rol_id')
+            ->where('usuario_id', $colaborador['id'])
+            ->get()
+            ->getResultArray();
+        $colaborador['roles'] = array_map(fn($rol) => $rol['rol_id'], $roles);
+
+        return $colaborador;
+    }
+
+
+    public function actualizarColaborador($id, $colaboradorData, $roles, $emails, $telefonos)
+{
+    $db = \Config\Database::connect();
+    $db->transStart();
+
+    // Obtener el persona_id del usuario antes de actualizar
+    $usuario = $this->find($id);
+    if (!$usuario) {
+        return false; // Si no existe, no se actualiza
+    }
+    $personaId = $usuario['persona_id'];
+
+    // Actualizar datos en ccp_persona
+    $db->table('ccp_persona')
+        ->where('id', $personaId)
+        ->update([
+            'nombres' => $colaboradorData['nombres'],
+            'apellido_paterno' => $colaboradorData['apellido_paterno'],
+            'apellido_materno' => $colaboradorData['apellido_materno'],
+            'direccion' => $colaboradorData['direccion'],
+        ]);
+
+    // Mantener los valores actuales de usuario y estado si no están en la actualización
+    $usuarioData = [
+        'usuario' => $colaboradorData['usuario'] ?? $usuario['usuario'], // Mantener si está vacío
+        'estado' => isset($colaboradorData['estado']) ? $colaboradorData['estado'] : $usuario['estado']
+    ];
+    if (!empty($colaboradorData['password'])) {
+        $usuarioData['password'] = $colaboradorData['password'];
+    }
+    $this->update($id, $usuarioData);
+
+    // Actualizar identificación en ccp_persona_identificacion
+    $db->table('ccp_persona_identificacion')
+        ->where('id_persona', $personaId)
+        ->update([
+            'id_tipo_identificacion' => $colaboradorData['id_tipo_identificacion'],
+            'identificacion_descripcion' => $colaboradorData['identificacion_descripcion']
+        ]);
+
+    // Actualizar roles: eliminar y volver a insertar
+    $db->table('ccp_usuario_rol')->where('usuario_id', $id)->delete();
+    foreach ($roles as $rolId) {
+        $db->table('ccp_usuario_rol')->insert(['usuario_id' => $id, 'rol_id' => $rolId]);
+    }
+
+    // Actualizar correos: eliminar y volver a insertar
+    $db->table('ccp_email')->where('persona_id', $personaId)->delete();
+    foreach ($emails as $email) {
+        $db->table('ccp_email')->insert(['persona_id' => $personaId, 'email' => $email, 'estado' => 1]);
+    }
+
+    // Actualizar teléfonos: eliminar y volver a insertar
+    $db->table('ccp_telefono')->where('persona_id', $personaId)->delete();
+    foreach ($telefonos as $telefono) {
+        $db->table('ccp_telefono')->insert(['persona_id' => $personaId, 'numero' => $telefono, 'estado' => 1]);
+    }
+
+    $db->transComplete();
+
+    return $db->transStatus();
+}
+
+
+
+
 }

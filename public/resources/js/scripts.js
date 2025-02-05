@@ -1,45 +1,73 @@
 /**
- * Maneja los correos dinámicamente.
+ * Maneja los correos dinámicamente, asegurando compatibilidad con registrar y editar.
  */
 function manejarCorreos() {
     const emailContainer = document.querySelector('#emails-container');
     if (emailContainer) {
+        let existingEmails = emailContainer.querySelectorAll('input[name="emails[]"]');
+        if (existingEmails.length === 0 || existingEmails[0].value === '') {
+            agregarCorreo(emailContainer, ''); // Agrega un campo vacío si no hay correos
+        }
+
         emailContainer.addEventListener('click', function (e) {
             if (e.target.classList.contains('add-email')) {
-                const newInput = document.createElement('div');
-                newInput.classList.add('input-group', 'mb-2');
-                newInput.innerHTML = `
-                    <input type="email" class="form-control" name="emails[]" placeholder="Correo (Opcional)">
-                    <button type="button" class="btn btn-danger remove-email">x</button>
-                `;
-                emailContainer.appendChild(newInput);
+                agregarCorreo(emailContainer, '');
             } else if (e.target.classList.contains('remove-email')) {
-                e.target.closest('.input-group').remove();
+                if (emailContainer.children.length > 1) {
+                    e.target.closest('.input-group').remove();
+                }
             }
         });
     }
 }
 
 /**
- * Maneja los teléfonos dinámicamente.
+ * Agrega un nuevo campo de correo electrónico.
+ */
+function agregarCorreo(container, emailValue = '') {
+    const newInput = document.createElement('div');
+    newInput.classList.add('input-group', 'mb-2');
+    newInput.innerHTML = `
+        <input type="email" class="form-control" name="emails[]" value="${emailValue}" placeholder="Correo (Opcional)">
+        <button type="button" class="btn btn-danger remove-email">x</button>
+    `;
+    container.appendChild(newInput);
+}
+
+/**
+ * Maneja los teléfonos dinámicamente, asegurando compatibilidad con registrar y editar.
  */
 function manejarTelefonos() {
     const phoneContainer = document.querySelector('#telefonos-container');
     if (phoneContainer) {
+        let existingPhones = phoneContainer.querySelectorAll('input[name="telefonos[]"]');
+        if (existingPhones.length === 0 || existingPhones[0].value === '') {
+            agregarTelefono(phoneContainer, ''); // Agrega un campo vacío si no hay teléfonos
+        }
+
         phoneContainer.addEventListener('click', function (e) {
             if (e.target.classList.contains('add-phone')) {
-                const newInput = document.createElement('div');
-                newInput.classList.add('input-group', 'mb-2');
-                newInput.innerHTML = `
-                    <input type="text" class="form-control" name="telefonos[]" placeholder="Teléfono (Opcional)">
-                    <button type="button" class="btn btn-danger remove-phone">x</button>
-                `;
-                phoneContainer.appendChild(newInput);
+                agregarTelefono(phoneContainer, '');
             } else if (e.target.classList.contains('remove-phone')) {
-                e.target.closest('.input-group').remove();
+                if (phoneContainer.children.length > 1) {
+                    e.target.closest('.input-group').remove();
+                }
             }
         });
     }
+}
+
+/**
+ * Agrega un nuevo campo de teléfono.
+ */
+function agregarTelefono(container, phoneValue = '') {
+    const newInput = document.createElement('div');
+    newInput.classList.add('input-group', 'mb-2');
+    newInput.innerHTML = `
+        <input type="text" class="form-control" name="telefonos[]" value="${phoneValue}" placeholder="Teléfono (Opcional)">
+        <button type="button" class="btn btn-danger remove-phone">x</button>
+    `;
+    container.appendChild(newInput);
 }
 
 /**
@@ -140,7 +168,6 @@ function inicializarTooltips() {
         new bootstrap.Tooltip(tooltipTriggerEl);
     });
 }
-
 
 /**
  * Función para inicializar funciones específicas según se necesiten.

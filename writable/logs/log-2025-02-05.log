@@ -31,3 +31,120 @@ CRITICAL - 2025-02-05 00:21:36 --> Undefined variable: colaborador
 #7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2025-02-05 00:23:55 --> Undefined variable: colaborador
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\editar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/edi...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(157): view('colaborador/edi...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->editar('1')
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-02-05 00:23:56 --> Undefined variable: colaborador
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\editar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/edi...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(157): view('colaborador/edi...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->editar('1')
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-02-05 00:30:38 --> Undefined index: id_colaborador
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\editar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/edi...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(166): view('colaborador/edi...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->editar('1')
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-02-05 00:30:40 --> Undefined index: id_colaborador
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\editar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/edi...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(166): view('colaborador/edi...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->editar('1')
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-02-05 00:32:09 --> Undefined index: id_usuario
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\editar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/edi...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(166): view('colaborador/edi...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->editar('1')
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-02-05 00:32:10 --> Undefined index: id_usuario
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\editar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/edi...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(166): view('colaborador/edi...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->editar('1')
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-02-05 00:32:10 --> Undefined index: id_usuario
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\editar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/edi...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(166): view('colaborador/edi...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->editar('1')
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-02-05 00:32:10 --> Undefined index: id_usuario
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\editar.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/edi...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(166): view('colaborador/edi...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->editar('1')
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-02-05 00:34:25 --> Undefined index: nombres
+#0 C:\xampp\htdocs\sistema\app\Views\colaborador\editar.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 8, Array)
+#1 C:\xampp\htdocs\sistema\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/edi...', Array, true)
+#4 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(166): view('colaborador/edi...', Array)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->editar('1')
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-02-05 00:57:11 --> syntax error, unexpected ']', expecting ')'
+#0 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\sistema\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2025-02-05 01:29:38 --> Undefined index: nombres
+#0 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(255): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 255, Array)
+#1 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(215): App\Models\ColaboradorModel->actualizarColaborador('4', Array, Array, Array, Array)
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->actualizar('4')
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

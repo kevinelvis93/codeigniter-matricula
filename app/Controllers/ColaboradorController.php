@@ -145,33 +145,88 @@ class ColaboradorController extends BaseController
     }
 
     public function editar($id)
-    {
-        $this->verificarAutenticacion();
-        $this->cargarRoles();
-        $this->cargarTipoIdentificacion();
+{
+    $this->verificarAutenticacion();
+    $this->cargarRoles();
+    $this->cargarTipoIdentificacion();
 
-        $data['roles'] = $this->roles;
-        $data['tipoIdentificacion'] = $this->tipoIdentificacion;
-        $data['header'] = view('template/header', ['menu' => $this->menu]);
-        $data['footer'] = view('template/footer');
-        return view('colaborador/editar', $data);
+    $model = new ColaboradorModel();
+    $colaborador = $model->obtenerColaboradorPorId($id);
+
+    if (!$colaborador) {
+        return redirect()->to(site_url('colaborador'))->with('error', 'Colaborador no encontrado.');
     }
+
+    
+
+    // Asegurar que los correos y teléfonos sean arrays válidos
+    $colaborador['emails'] = !empty($colaborador['emails']) ? $colaborador['emails'] : [''];
+    $colaborador['telefonos'] = !empty($colaborador['telefonos']) ? $colaborador['telefonos'] : [''];
+
+    $data['colaborador'] = $colaborador;
+    $data['roles'] = $this->roles;
+    $data['tipoIdentificacion'] = $this->tipoIdentificacion;
+    $data['header'] = view('template/header', ['menu' => $this->menu]);
+    $data['footer'] = view('template/footer');
+
+    return view('colaborador/editar', $data);
+}
+
+
+
 
     public function actualizar($id)
-    {
-        $model = new ColaboradorModel();
-        $data = [
-            'nombres' => $this->request->getPost('nombres'),
-            'apellidos' => $this->request->getPost('apellidos'),
-            'dni' => $this->request->getPost('dni'),
-            'correo' => $this->request->getPost('correo'),
-            'telefono' => $this->request->getPost('telefono'),
-            'direccion' => $this->request->getPost('direccion'),
-            'estado' => $this->request->getPost('estado'),
-        ];
-        $model->update($id, $data);
-        return redirect()->to(site_url('colaborador'));
+{
+    $this->verificarAutenticacion();
+
+    $model = new ColaboradorModel();
+
+    // Obtener los datos actuales del colaborador
+    $colaboradorActual = $model->obtenerColaboradorPorId($id);
+
+    // Obtener datos del formulario
+    $colaboradorData = [
+        'direccion' => $this->request->getPost('direccion'),
+        'usuario' => $this->request->getPost('usuario'),
+        'estado' => $this->request->getPost('estado'),
+        'id_tipo_identificacion' => $this->request->getPost('id_tipo_identificacion'),
+        'identificacion_descripcion' => $this->request->getPost('identificacion_descripcion'),
+        
+        // Agregar nombres y apellidos actuales para evitar el error en el modelo
+        'nombres' => $colaboradorActual['nombres'],
+        'apellido_paterno' => $colaboradorActual['apellido_paterno'],
+        'apellido_materno' => $colaboradorActual['apellido_materno'],
+    ];
+
+    // Si el usuario está vacío, generarlo con los datos actuales
+    if (empty($colaboradorData['usuario'])) {
+        $colaboradorData['usuario'] = $this->generarUsuario(
+            $colaboradorActual['nombres'],
+            $colaboradorActual['apellido_paterno'],
+            $colaboradorActual['apellido_materno']
+        );
     }
+
+    // Obtener los roles seleccionados
+    $roles = $this->request->getPost('roles') ?? [];
+
+    // Obtener los correos electrónicos
+    $emails = array_filter($this->request->getPost('emails') ?? [], fn($email) => !empty(trim($email)));
+
+    // Obtener los teléfonos
+    $telefonos = array_filter($this->request->getPost('telefonos') ?? [], fn($telefono) => !empty(trim($telefono)));
+
+    // Ejecutar la actualización en el modelo
+    $actualizado = $model->actualizarColaborador($id, $colaboradorData, $roles, $emails, $telefonos);
+
+    if ($actualizado) {
+        return redirect()->to(site_url('colaborador'))->with('success', 'Colaborador actualizado correctamente.');
+    } else {
+        return redirect()->back()->with('error', 'No se pudo actualizar el colaborador.');
+    }
+}
+
+
 
 
 }
