@@ -144,5 +144,34 @@ class ColaboradorController extends BaseController
         return redirect()->to('/colaborador');
     }
 
+    public function editar($id)
+    {
+        $this->verificarAutenticacion();
+        $this->cargarRoles();
+        $this->cargarTipoIdentificacion();
+
+        $data['roles'] = $this->roles;
+        $data['tipoIdentificacion'] = $this->tipoIdentificacion;
+        $data['header'] = view('template/header', ['menu' => $this->menu]);
+        $data['footer'] = view('template/footer');
+        return view('colaborador/editar', $data);
+    }
+
+    public function actualizar($id)
+    {
+        $model = new ColaboradorModel();
+        $data = [
+            'nombres' => $this->request->getPost('nombres'),
+            'apellidos' => $this->request->getPost('apellidos'),
+            'dni' => $this->request->getPost('dni'),
+            'correo' => $this->request->getPost('correo'),
+            'telefono' => $this->request->getPost('telefono'),
+            'direccion' => $this->request->getPost('direccion'),
+            'estado' => $this->request->getPost('estado'),
+        ];
+        $model->update($id, $data);
+        return redirect()->to(site_url('colaborador'));
+    }
+
 
 }

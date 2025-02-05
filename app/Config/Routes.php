@@ -41,6 +41,8 @@ $routes->get('/plantilla', 'PlantillaController::index');
 $routes->get('/colaborador', 'ColaboradorController::index', ['filter' => 'permission']);
 $routes->get('/colaborador/registrar', 'ColaboradorController::registrar', ['filter' => 'permission']);
 $routes->post('/colaborador/registrar', 'ColaboradorController::registrarPost');
+$routes->get('colaborador/editar/(:num)', 'ColaboradorController::editar/$1');
+$routes->post('colaborador/actualizar/(:num)', 'ColaboradorController::actualizar/$1');
 
 
 
