@@ -1,6 +1,6 @@
 -- phpMyAdmin SQL Dump
 -- version 5.1.0
--- https://www.phpmyadmin.net/ Holaaaaaaaaa
+-- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
 -- Tiempo de generación: 16-11-2024 a las 08:31:41
