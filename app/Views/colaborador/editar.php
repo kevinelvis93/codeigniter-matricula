@@ -1,47 +1,47 @@
 <?= $header; ?>
 
-<div class="container mt-4">
-    <h2>Editar Colaborador</h2>
-    <?php if (session()->getFlashdata('error')): ?>
-        <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
-    <?php endif; ?>
-    <?php if (session()->getFlashdata('success')): ?>
-        <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
-    <?php endif; ?>
+        <div class="container mt-4">
+            <h2>Editar Colaborador</h2>
+            <?php if (session()->getFlashdata('error')): ?>
+                <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
+            <?php endif; ?>
+            <?php if (session()->getFlashdata('success')): ?>
+                <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
+            <?php endif; ?>
 
-    <form action="<?= base_url('/colaborador/actualizar/' . $colaborador['id']) ?>" method="post">
-        <?= csrf_field() ?>
+            <form action="<?= base_url('/colaborador/actualizar/' . $colaborador['id']) ?>" method="post">
+                <?= csrf_field() ?>
 
-        <?php
-    $oldTipoIdentificacion = session()->getFlashdata('input')['id_tipo_identificacion'] ?? $colaborador['id_tipo_identificacion'] ?? '';
-    $oldIdentificacionDescripcion = session()->getFlashdata('input')['identificacion_descripcion'] ?? $colaborador['identificacion_descripcion'] ?? '';
-?>
+                <?php
+            $oldTipoIdentificacion = session()->getFlashdata('input')['id_tipo_identificacion'] ?? $colaborador['id_tipo_identificacion'] ?? '';
+            $oldIdentificacionDescripcion = session()->getFlashdata('input')['identificacion_descripcion'] ?? $colaborador['identificacion_descripcion'] ?? '';
+        ?>
 
-<div class="mb-3">
-    <label for="id_tipo_identificacion" class="form-label">Tipo de Identificación</label>
-    <select class="form-select" id="id_tipo_identificacion" name="id_tipo_identificacion" onchange="mostrarNumeroDocumento()" required>
-        <option value=""> -- Seleccionar -- </option>
-        <?php if (!empty($tipoIdentificacion)): ?>
-            <?php foreach ($tipoIdentificacion as $identificacion): ?>
-                <option 
-                    value="<?= esc($identificacion['id_tipo_identificacion']) ?>" 
-                    <?= ($oldTipoIdentificacion == $identificacion['id_tipo_identificacion']) ? 'selected' : '' ?>>
-                    <?= esc($identificacion['identificacion_nombre']) ?>
-                </option>
-            <?php endforeach; ?>
-        <?php endif; ?>
-    </select>
-</div>
+        <div class="mb-3">
+            <label for="id_tipo_identificacion" class="form-label">Tipo de Identificación</label>
+            <select class="form-select" id="id_tipo_identificacion" name="id_tipo_identificacion" onchange="mostrarNumeroDocumento()" required>
+                <option value=""> -- Seleccionar -- </option>
+                <?php if (!empty($tipoIdentificacion)): ?>
+                    <?php foreach ($tipoIdentificacion as $identificacion): ?>
+                        <option 
+                            value="<?= esc($identificacion['id_tipo_identificacion']) ?>" 
+                            <?= ($oldTipoIdentificacion == $identificacion['id_tipo_identificacion']) ? 'selected' : '' ?>>
+                            <?= esc($identificacion['identificacion_nombre']) ?>
+                        </option>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </select>
+        </div>
 
-<div class="mb-3" id="campo-numero-documento">
-    <label for="identificacion_descripcion" class="form-label">Número de Documento</label>
-    <input 
-        type="text" 
-        class="form-control" 
-        id="identificacion_descripcion" 
-        name="identificacion_descripcion" 
-        value="<?= esc($oldIdentificacionDescripcion) ?>">
-</div>
+        <div class="mb-3" id="campo-numero-documento">
+            <label for="identificacion_descripcion" class="form-label">Número de Documento</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="identificacion_descripcion" 
+                name="identificacion_descripcion" 
+                value="<?= esc($oldIdentificacionDescripcion) ?>">
+        </div>
 
 
         <div class="mb-3">
