@@ -1,0 +1,9 @@
+__ci_last_regenerate|i:1739001187;_ci_previous_url|s:46:"http://localhost/sistema/colaborador/registrar";usuario_id|s:1:"1";nombre|s:16:"Kevin Elvis Melo";roles|a:2:{i:0;s:1:"1";i:1;s:1:"2";}isLoggedIn|b:1;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:11:{s:14:"csrf_test_name";s:32:"6808964295d9dd2ecb1e12d44907b5f3";s:22:"id_tipo_identificacion";s:1:"1";s:26:"identificacion_descripcion";s:8:"52365214";s:7:"nombres";s:5:"KEVIN";s:16:"apellido_paterno";s:4:"MELO";s:16:"apellido_materno";s:6:"MEDINA";s:9:"direccion";s:11:"El Agustino";s:8:"password";s:8:"qonzblvh";s:6:"emails";a:1:{i:0;s:25:"melomedinakevin@gmail.com";}s:9:"telefonos";a:1:{i:0;s:9:"984310226";}s:5:"roles";a:1:{i:0;s:1:"2";}}}__ci_vars|a:3:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:5:"error";s:3:"old";}_ci_validation_errors|s:85:"a:1:{s:8:"emails.*";s:56:"El correo melomedinakevin@gmail.com ya está registrado.";}";error|s:265:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
+	<div class="errors" role="alert">
+		<ul>
+					<li>El correo melomedinakevin@gmail.com ya está registrado.</li>
+				</ul>
+	</div>
+
+<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
+";

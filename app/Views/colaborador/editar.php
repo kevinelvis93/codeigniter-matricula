@@ -12,31 +12,37 @@
     <form action="<?= base_url('/colaborador/actualizar/' . $colaborador['id']) ?>" method="post">
         <?= csrf_field() ?>
 
-        <div class="mb-3">
-            <label for="id_tipo_identificacion" class="form-label">Tipo de Identificación</label>
-            <select class="form-select" id="id_tipo_identificacion" name="id_tipo_identificacion" onchange="mostrarNumeroDocumento()" required>
-                <option value=""> -- Seleccionar -- </option>
-                <?php if (!empty($tipoIdentificacion)): ?>
-                    <?php foreach ($tipoIdentificacion as $identificacion): ?>
-                        <option 
-                            value="<?= esc($identificacion['id_tipo_identificacion']) ?>" 
-                            <?= ($colaborador['id_tipo_identificacion'] ?? '') == $identificacion['id_tipo_identificacion'] ? 'selected' : '' ?>>
-                            <?= esc($identificacion['identificacion_nombre']) ?>
-                        </option>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-            </select>
-        </div>
+        <?php
+    $oldTipoIdentificacion = session()->getFlashdata('input')['id_tipo_identificacion'] ?? $colaborador['id_tipo_identificacion'] ?? '';
+    $oldIdentificacionDescripcion = session()->getFlashdata('input')['identificacion_descripcion'] ?? $colaborador['identificacion_descripcion'] ?? '';
+?>
 
-        <div class="mb-3" id="campo-numero-documento">
-            <label for="identificacion_descripcion" class="form-label">Número de Documento</label>
-            <input 
-                type="text" 
-                class="form-control" 
-                id="identificacion_descripcion" 
-                name="identificacion_descripcion" 
-                value="<?= esc($colaborador['identificacion_descripcion'] ?? '') ?>">
-        </div>
+<div class="mb-3">
+    <label for="id_tipo_identificacion" class="form-label">Tipo de Identificación</label>
+    <select class="form-select" id="id_tipo_identificacion" name="id_tipo_identificacion" onchange="mostrarNumeroDocumento()" required>
+        <option value=""> -- Seleccionar -- </option>
+        <?php if (!empty($tipoIdentificacion)): ?>
+            <?php foreach ($tipoIdentificacion as $identificacion): ?>
+                <option 
+                    value="<?= esc($identificacion['id_tipo_identificacion']) ?>" 
+                    <?= ($oldTipoIdentificacion == $identificacion['id_tipo_identificacion']) ? 'selected' : '' ?>>
+                    <?= esc($identificacion['identificacion_nombre']) ?>
+                </option>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </select>
+</div>
+
+<div class="mb-3" id="campo-numero-documento">
+    <label for="identificacion_descripcion" class="form-label">Número de Documento</label>
+    <input 
+        type="text" 
+        class="form-control" 
+        id="identificacion_descripcion" 
+        name="identificacion_descripcion" 
+        value="<?= esc($oldIdentificacionDescripcion) ?>">
+</div>
+
 
         <div class="mb-3">
             <label for="nombres" class="form-label">Nombres</label>

@@ -268,13 +268,30 @@ class ColaboradorModel extends Model
     }
     $this->update($id, $usuarioData);
 
-    // Actualizar identificación en ccp_persona_identificacion
+    // Verificar si ya existe un registro en ccp_persona_identificacion
+$identificacionExistente = $db->table('ccp_persona_identificacion')
+    ->where('id_persona', $personaId)
+    ->get()
+    ->getRowArray();
+
+if ($identificacionExistente) {
+    // Si existe, actualizar
     $db->table('ccp_persona_identificacion')
         ->where('id_persona', $personaId)
         ->update([
             'id_tipo_identificacion' => $colaboradorData['id_tipo_identificacion'],
             'identificacion_descripcion' => $colaboradorData['identificacion_descripcion']
         ]);
+} else {
+    // Si no existe, insertar
+    $db->table('ccp_persona_identificacion')
+        ->insert([
+            'id_persona' => $personaId,
+            'id_tipo_identificacion' => $colaboradorData['id_tipo_identificacion'],
+            'identificacion_descripcion' => $colaboradorData['identificacion_descripcion']
+        ]);
+}
+
 
     // Actualizar roles: eliminar y volver a insertar
     $db->table('ccp_usuario_rol')->where('usuario_id', $id)->delete();

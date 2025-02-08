@@ -1,21 +1,44 @@
 /**
- * Maneja los correos dinámicamente, asegurando compatibilidad con registrar y editar.
+ * Maneja los correos dinámicamente, asegurando que solo haya un campo inicial.
  */
 function manejarCorreos() {
     const emailContainer = document.querySelector('#emails-container');
     if (emailContainer) {
         let existingEmails = emailContainer.querySelectorAll('input[name="emails[]"]');
-        if (existingEmails.length === 0 || existingEmails[0].value === '') {
-            agregarCorreo(emailContainer, ''); // Agrega un campo vacío si no hay correos
+
+        // Mantener solo un campo inicial si no hay valores
+        if (existingEmails.length === 0) {
+            agregarCorreo(emailContainer, '');
         }
 
         emailContainer.addEventListener('click', function (e) {
             if (e.target.classList.contains('add-email')) {
                 agregarCorreo(emailContainer, '');
             } else if (e.target.classList.contains('remove-email')) {
-                if (emailContainer.children.length > 1) {
-                    e.target.closest('.input-group').remove();
-                }
+                e.target.closest('.input-group').remove();
+            }
+        });
+    }
+}
+
+/**
+ * Maneja los teléfonos dinámicamente, asegurando que solo haya un campo inicial.
+ */
+function manejarTelefonos() {
+    const phoneContainer = document.querySelector('#telefonos-container');
+    if (phoneContainer) {
+        let existingPhones = phoneContainer.querySelectorAll('input[name="telefonos[]"]');
+
+        // Mantener solo un campo inicial si no hay valores
+        if (existingPhones.length === 0) {
+            agregarTelefono(phoneContainer, '');
+        }
+
+        phoneContainer.addEventListener('click', function (e) {
+            if (e.target.classList.contains('add-phone')) {
+                agregarTelefono(phoneContainer, '');
+            } else if (e.target.classList.contains('remove-phone')) {
+                e.target.closest('.input-group').remove();
             }
         });
     }
@@ -28,33 +51,10 @@ function agregarCorreo(container, emailValue = '') {
     const newInput = document.createElement('div');
     newInput.classList.add('input-group', 'mb-2');
     newInput.innerHTML = `
-        <input type="email" class="form-control" name="emails[]" value="${emailValue}" placeholder="Correo (Opcional)">
+        <input type="email" class="form-control" name="emails[]" value="${emailValue}" placeholder="Correo">
         <button type="button" class="btn btn-danger remove-email">x</button>
     `;
     container.appendChild(newInput);
-}
-
-/**
- * Maneja los teléfonos dinámicamente, asegurando compatibilidad con registrar y editar.
- */
-function manejarTelefonos() {
-    const phoneContainer = document.querySelector('#telefonos-container');
-    if (phoneContainer) {
-        let existingPhones = phoneContainer.querySelectorAll('input[name="telefonos[]"]');
-        if (existingPhones.length === 0 || existingPhones[0].value === '') {
-            agregarTelefono(phoneContainer, ''); // Agrega un campo vacío si no hay teléfonos
-        }
-
-        phoneContainer.addEventListener('click', function (e) {
-            if (e.target.classList.contains('add-phone')) {
-                agregarTelefono(phoneContainer, '');
-            } else if (e.target.classList.contains('remove-phone')) {
-                if (phoneContainer.children.length > 1) {
-                    e.target.closest('.input-group').remove();
-                }
-            }
-        });
-    }
 }
 
 /**
@@ -64,7 +64,7 @@ function agregarTelefono(container, phoneValue = '') {
     const newInput = document.createElement('div');
     newInput.classList.add('input-group', 'mb-2');
     newInput.innerHTML = `
-        <input type="text" class="form-control" name="telefonos[]" value="${phoneValue}" placeholder="Teléfono (Opcional)">
+        <input type="text" class="form-control" name="telefonos[]" value="${phoneValue}" placeholder="Teléfono">
         <button type="button" class="btn btn-danger remove-phone">x</button>
     `;
     container.appendChild(newInput);
@@ -110,27 +110,30 @@ function mostrarNumeroDocumento() {
     // Mostrar el campo solo si se selecciona un valor válido
     if (selectTipoIdentificacion && selectTipoIdentificacion.value) {
         campoNumeroDocumento.style.display = 'block';
-        // Marcar el campo como obligatorio
         inputNumeroDocumento.setAttribute('required', 'required');
     } else {
         campoNumeroDocumento.style.display = 'none';
-        // Eliminar el atributo obligatorio si no está visible
         inputNumeroDocumento.removeAttribute('required');
     }
 }
 
+/**
+ * Habilitar mayúsculas automáticas en ciertos campos.
+ */
 function habilitarMayusculas() {
     const campos = document.querySelectorAll('.texto-mayuscula');
 
     campos.forEach((campo) => {
+        // Convertir el contenido actual del campo a mayúsculas (para editar.php)
+        campo.value = campo.value.toUpperCase();
+
         // Evento para convertir mientras el usuario escribe
         campo.addEventListener('input', function () {
             this.value = this.value.toUpperCase();
         });
 
         // Evento para convertir al pegar texto
-        campo.addEventListener('paste', function (event) {
-            // Esperar a que el texto se pegue antes de convertirlo
+        campo.addEventListener('paste', function () {
             setTimeout(() => {
                 this.value = this.value.toUpperCase();
             }, 0);
@@ -138,12 +141,14 @@ function habilitarMayusculas() {
     });
 }
 
+/**
+ * Validar que al menos un rol esté seleccionado.
+ */
 function validarRoles() {
     const roles = document.querySelectorAll('input[name="roles[]"]');
     const errorDiv = document.querySelector('#roles-error');
     let alMenosUnoSeleccionado = false;
 
-    // Verificar si al menos uno está seleccionado
     roles.forEach(role => {
         if (role.checked) {
             alMenosUnoSeleccionado = true;
@@ -152,10 +157,10 @@ function validarRoles() {
 
     if (!alMenosUnoSeleccionado) {
         errorDiv.style.display = 'block';
-        return false; // Detiene el envío del formulario
+        return false;
     } else {
         errorDiv.style.display = 'none';
-        return true; // Permite el envío del formulario
+        return true;
     }
 }
 
@@ -170,7 +175,7 @@ function inicializarTooltips() {
 }
 
 /**
- * Función para inicializar funciones específicas según se necesiten.
+ * Inicializa las funciones dinámicas en la carga de la página.
  */
 function inicializarFunciones() {
     if (document.querySelector('#emails-container')) {
@@ -185,9 +190,8 @@ function inicializarFunciones() {
         habilitarMayusculas();
     }
 
-    // Verificar el estado inicial del campo "Número de Documento"
     if (document.getElementById('id_tipo_identificacion')) {
-        mostrarNumeroDocumento(); // Llama a la función al cargar la página
+        mostrarNumeroDocumento();
     }
 
     inicializarTooltips();

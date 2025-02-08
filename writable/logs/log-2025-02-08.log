@@ -1,0 +1,96 @@
+CRITICAL - 2025-02-08 00:16:19 --> Undefined variable: identificacionExistente
+#0 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(272): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 272, Array)
+#1 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(220): App\Models\ColaboradorModel->actualizarColaborador('2', Array, Array, Array, Array)
+#2 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->actualizar('2')
+#3 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2025-02-08 00:44:50 --> Call to undefined function set_value()
+#0 C:\xampp\htdocs\sistema\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\sistema\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\sistema\system\Common.php(1089): CodeIgniter\View\View->render('colaborador/edi...', Array, true)
+#3 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(172): view('colaborador/edi...', Array)
+#4 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->editar('5')
+#5 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2025-02-08 01:39:20 --> Duplicate entry 'mario1@gmail.com' for key 'email'
+CRITICAL - 2025-02-08 01:39:20 --> Duplicate entry 'mario1@gmail.com' for key 'email'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cc...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cc...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cc...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cc...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(305): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(262): App\Models\ColaboradorModel->actualizarColaborador('4', Array, Array, Array, Array)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->actualizar('4')
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-02-08 02:05:40 --> Duplicate entry 'mario1@gmail.com' for key 'email'
+CRITICAL - 2025-02-08 02:05:40 --> Duplicate entry 'mario1@gmail.com' for key 'email'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cc...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cc...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cc...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cc...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(305): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(268): App\Models\ColaboradorModel->actualizarColaborador('4', Array, Array, Array, Array)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->actualizar('4')
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-02-08 02:06:30 --> Duplicate entry 'mario1@gmail.com' for key 'email'
+CRITICAL - 2025-02-08 02:06:30 --> Duplicate entry 'mario1@gmail.com' for key 'email'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cc...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cc...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cc...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cc...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(305): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(268): App\Models\ColaboradorModel->actualizarColaborador('4', Array, Array, Array, Array)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->actualizar('4')
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-02-08 02:20:02 --> Duplicate entry 'mario1@gmail.com' for key 'email'
+CRITICAL - 2025-02-08 02:20:02 --> Duplicate entry 'mario1@gmail.com' for key 'email'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cc...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cc...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cc...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cc...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(305): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(268): App\Models\ColaboradorModel->actualizarColaborador('4', Array, Array, Array, Array)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->actualizar('4')
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-02-08 02:20:29 --> Duplicate entry 'mario@gmail.com' for key 'email'
+CRITICAL - 2025-02-08 02:20:29 --> Duplicate entry 'mario@gmail.com' for key 'email'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cc...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cc...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cc...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cc...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(305): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(268): App\Models\ColaboradorModel->actualizarColaborador('4', Array, Array, Array, Array)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->actualizar('4')
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-02-08 02:21:03 --> Duplicate entry 'mario@gmail.com' for key 'email'
+CRITICAL - 2025-02-08 02:21:03 --> Duplicate entry 'mario@gmail.com' for key 'email'
+#0 C:\xampp\htdocs\sistema\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cc...', 0)
+#1 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cc...')
+#2 C:\xampp\htdocs\sistema\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cc...')
+#3 C:\xampp\htdocs\sistema\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cc...', Array, false)
+#4 C:\xampp\htdocs\sistema\app\Models\ColaboradorModel.php(305): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sistema\app\Controllers\ColaboradorController.php(268): App\Models\ColaboradorModel->actualizarColaborador('4', Array, Array, Array, Array)
+#6 C:\xampp\htdocs\sistema\system\CodeIgniter.php(832): App\Controllers\ColaboradorController->actualizar('4')
+#7 C:\xampp\htdocs\sistema\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ColaboradorController))
+#8 C:\xampp\htdocs\sistema\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sistema\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

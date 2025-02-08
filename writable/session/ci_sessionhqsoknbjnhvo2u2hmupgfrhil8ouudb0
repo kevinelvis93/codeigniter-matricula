@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1732147721;_ci_previous_url|s:46:"http://localhost/sistema/colaborador/registrar";usuario_id|s:1:"1";nombre|s:16:"Kevin Elvis Melo";roles|a:2:{i:0;s:1:"1";i:1;s:1:"2";}isLoggedIn|b:1;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:11:{s:14:"csrf_test_name";s:32:"de2bd588cd8ca13cdcfcd9f9183e2fb4";s:22:"id_tipo_identificacion";s:1:"1";s:26:"identificacion_descripcion";s:8:"47923146";s:7:"nombres";s:6:"FELIPE";s:16:"apellido_paterno";s:6:"DURAND";s:16:"apellido_materno";s:8:"GONZALES";s:9:"direccion";s:0:"";s:8:"password";s:8:"siymbejh";s:6:"emails";a:1:{i:0;s:17:"fdurand@gmail.com";}s:9:"telefonos";a:2:{i:0;s:9:"999999998";i:1;s:9:"999999997";}s:5:"roles";a:2:{i:0;s:1:"1";i:1;s:1:"2";}}}__ci_vars|a:3:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";s:5:"error";s:3:"old";}_ci_validation_errors|s:124:"a:1:{s:26:"identificacion_descripcion";s:76:"El Número de Documento ya está registrado. Por favor, verifique los datos.";}";error|s:285:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>El Número de Documento ya está registrado. Por favor, verifique los datos.</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
-";

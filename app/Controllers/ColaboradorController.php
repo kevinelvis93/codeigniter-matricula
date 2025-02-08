@@ -108,7 +108,13 @@ class ColaboradorController extends BaseController
                         'is_unique' => 'El correo {value} ya está registrado.',
                     ]
                 ],
-                'telefonos.*' => 'max_length[15]'
+                'telefonos.*' => [
+                    'rules' => 'max_length[15]|is_unique[ccp_telefono.numero]',
+                    'errors' => [
+                        'max_length' => 'El número de teléfono no puede exceder los 15 caracteres.',
+                        'is_unique' => 'El número de teléfono {value} ya está registrado.',
+                    ]
+                ]
             ]);
 
             if (!$validation->withRequest($this->request)->run()) {
@@ -157,7 +163,7 @@ class ColaboradorController extends BaseController
         return redirect()->to(site_url('colaborador'))->with('error', 'Colaborador no encontrado.');
     }
 
-    
+
 
     // Asegurar que los correos y teléfonos sean arrays válidos
     $colaborador['emails'] = !empty($colaborador['emails']) ? $colaborador['emails'] : [''];
@@ -180,22 +186,23 @@ class ColaboradorController extends BaseController
     $this->verificarAutenticacion();
 
     $model = new ColaboradorModel();
+    $db = \Config\Database::connect();
 
     // Obtener los datos actuales del colaborador
     $colaboradorActual = $model->obtenerColaboradorPorId($id);
 
     // Obtener datos del formulario
     $colaboradorData = [
-        'direccion' => $this->request->getPost('direccion'),
-        'usuario' => $this->request->getPost('usuario'),
+        'direccion' => trim($this->request->getPost('direccion')),
+        'usuario' => trim($this->request->getPost('usuario')),
         'estado' => $this->request->getPost('estado'),
         'id_tipo_identificacion' => $this->request->getPost('id_tipo_identificacion'),
-        'identificacion_descripcion' => $this->request->getPost('identificacion_descripcion'),
-        
-        // Agregar nombres y apellidos actuales para evitar el error en el modelo
-        'nombres' => $colaboradorActual['nombres'],
-        'apellido_paterno' => $colaboradorActual['apellido_paterno'],
-        'apellido_materno' => $colaboradorActual['apellido_materno'],
+        'identificacion_descripcion' => trim($this->request->getPost('identificacion_descripcion')),
+
+        // Agregar nombres y apellidos actuales para evitar errores en el modelo
+        'nombres' => trim($colaboradorActual['nombres']),
+        'apellido_paterno' => trim($colaboradorActual['apellido_paterno']),
+        'apellido_materno' => trim($colaboradorActual['apellido_materno']),
     ];
 
     // Si el usuario está vacío, generarlo con los datos actuales
@@ -207,24 +214,63 @@ class ColaboradorController extends BaseController
         );
     }
 
+    // Validaciones de unicidad antes de actualizar
+    if ($colaboradorData['usuario'] !== $colaboradorActual['usuario'] &&
+        $db->table('ccp_usuario')->where('usuario', $colaboradorData['usuario'])->where('id !=', $id)->countAllResults() > 0) {
+        
+        return redirect()->back()->with('error', 'El usuario ya está en uso.')->withInput();
+    }
+
+    if ($colaboradorData['identificacion_descripcion'] !== $colaboradorActual['identificacion_descripcion'] &&
+        $db->table('ccp_persona_identificacion')->where('identificacion_descripcion', $colaboradorData['identificacion_descripcion'])
+        ->where('id_persona !=', $colaboradorActual['persona_id'])->countAllResults() > 0) {
+        
+        return redirect()->back()->with('error', 'El DNI/Carnet ya está registrado.')->withInput();
+    }
+
+    // Obtener correos electrónicos y validar unicidad
+    $emails = array_filter($this->request->getPost('emails') ?? [], fn($email) => !empty(trim($email)));
+    $uniqueEmails = array_unique($emails); // Evita duplicados en la misma solicitud
+
+    if (count($emails) !== count($uniqueEmails)) {
+        return redirect()->back()->with('error', 'No se pueden ingresar correos electrónicos duplicados.')->withInput();
+    }
+
+    foreach ($uniqueEmails as $email) {
+        if ($db->table('ccp_email')->where('email', $email)->where('persona_id !=', $colaboradorActual['persona_id'])->countAllResults() > 0) {
+            return redirect()->back()->with('error', 'El correo ' . esc($email) . ' ya está registrado.')->withInput();
+        }
+    }
+
+    // Obtener teléfonos y validar unicidad
+    $telefonos = array_filter($this->request->getPost('telefonos') ?? [], fn($telefono) => !empty(trim($telefono)));
+    $uniqueTelefonos = array_unique($telefonos); // Evita duplicados en la misma solicitud
+
+    if (count($telefonos) !== count($uniqueTelefonos)) {
+        return redirect()->back()->with('error', 'No se pueden ingresar teléfonos duplicados.')->withInput();
+    }
+
+    foreach ($uniqueTelefonos as $telefono) {
+        if ($db->table('ccp_telefono')->where('numero', $telefono)->where('persona_id !=', $colaboradorActual['persona_id'])->countAllResults() > 0) {
+            return redirect()->back()->with('error', 'El número de teléfono ' . esc($telefono) . ' ya está registrado.')->withInput();
+        }
+    }
+
     // Obtener los roles seleccionados
     $roles = $this->request->getPost('roles') ?? [];
 
-    // Obtener los correos electrónicos
-    $emails = array_filter($this->request->getPost('emails') ?? [], fn($email) => !empty(trim($email)));
-
-    // Obtener los teléfonos
-    $telefonos = array_filter($this->request->getPost('telefonos') ?? [], fn($telefono) => !empty(trim($telefono)));
-
     // Ejecutar la actualización en el modelo
-    $actualizado = $model->actualizarColaborador($id, $colaboradorData, $roles, $emails, $telefonos);
+    $actualizado = $model->actualizarColaborador($id, $colaboradorData, $roles, $uniqueEmails, $uniqueTelefonos);
 
     if ($actualizado) {
         return redirect()->to(site_url('colaborador'))->with('success', 'Colaborador actualizado correctamente.');
     } else {
-        return redirect()->back()->with('error', 'No se pudo actualizar el colaborador.');
+        return redirect()->back()->with('error', 'No se pudo actualizar el colaborador.')->withInput();
     }
 }
+
+
+
 
 
 
