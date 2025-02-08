@@ -270,6 +270,55 @@ class ColaboradorController extends BaseController
 }
 
 
+public function validarClave()
+{
+    $claveIngresada = $this->request->getJSON()->clave;
+    $claveEstatica = '12345678'; // Clave fija temporal
+
+    if ($claveIngresada === $claveEstatica) {
+        return $this->response->setJSON(['valido' => true]);
+    } else {
+        return $this->response->setJSON(['valido' => false]);
+    }
+}
+
+
+public function eliminar($id)
+{
+    $this->verificarAutenticacion();
+
+    $colaboradorModel = new ColaboradorModel();
+    $db = \Config\Database::connect();
+
+    // Verificar si el usuario existe
+    $usuario = $colaboradorModel->find($id);
+    if (!$usuario) {
+        return $this->response->setJSON(['success' => false, 'error' => 'Colaborador no encontrado.']);
+    }
+
+    $personaId = $usuario['persona_id']; // Obtener el ID de la persona asociada
+
+    $db->transStart(); // Iniciar transacción para asegurar consistencia
+
+    // Eliminar registros relacionados en todas las tablas asociadas
+    $db->table('ccp_usuario_rol')->where('usuario_id', $id)->delete(); // Eliminar roles
+    $db->table('ccp_email')->where('persona_id', $personaId)->delete(); // Eliminar correos
+    $db->table('ccp_telefono')->where('persona_id', $personaId)->delete(); // Eliminar teléfonos
+    $db->table('ccp_persona_identificacion')->where('id_persona', $personaId)->delete(); // Eliminar identificación
+    
+    // Eliminar usuario y persona asociada
+    $colaboradorModel->delete($id); // Eliminar de ccp_usuario
+    $db->table('ccp_persona')->where('id', $personaId)->delete(); // Eliminar de ccp_persona
+
+    $db->transComplete(); // Finalizar transacción
+
+    if ($db->transStatus()) {
+        return $this->response->setJSON(['success' => true]);
+    } else {
+        return $this->response->setJSON(['success' => false, 'error' => 'Error al eliminar.']);
+    }
+}
+
 
 
 

@@ -43,6 +43,9 @@ $routes->get('/colaborador/registrar', 'ColaboradorController::registrar', ['fil
 $routes->post('/colaborador/registrar', 'ColaboradorController::registrarPost');
 $routes->get('colaborador/editar/(:num)', 'ColaboradorController::editar/$1');
 $routes->post('colaborador/actualizar/(:num)', 'ColaboradorController::actualizar/$1');
+$routes->post('colaborador/validar-clave', 'ColaboradorController::validarClave');
+$routes->delete('colaborador/eliminar/(:num)', 'ColaboradorController::eliminar/$1');
+
 
 
 

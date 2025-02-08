@@ -165,6 +165,77 @@ function validarRoles() {
 }
 
 /**
+ * Maneja el botón de eliminar colaborador con SweetAlert2.
+ */
+function inicializarEliminarColaborador() {
+    document.querySelectorAll('.btn-eliminar').forEach(button => {
+        button.addEventListener('click', function () {
+            const colaboradorId = this.getAttribute('data-id');
+
+            Swal.fire({
+                title: '¿Estás seguro?',
+                text: "Esta acción no se puede deshacer.",
+                icon: 'warning',
+                input: 'password',
+                inputLabel: 'Ingrese su contraseña para confirmar',
+                inputPlaceholder: 'Contraseña',
+                inputAttributes: {
+                    autocapitalize: 'off'
+                },
+                showCancelButton: true,
+                confirmButtonText: 'Confirmar eliminación',
+                cancelButtonText: 'Cancelar',
+                preConfirm: (password) => {
+                    if (!password) {
+                        Swal.showValidationMessage('Debe ingresar una contraseña');
+                    }
+                    return fetch(`colaborador/validar-clave`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ clave: password })
+                    }).then(response => response.json())
+                      .then(data => {
+                          if (!data.valido) {
+                              throw new Error('Contraseña incorrecta');
+                          }
+                          return true;
+                      }).catch(error => {
+                          Swal.showValidationMessage(error.message);
+                      });
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: 'Confirmar eliminación',
+                        text: '¿Desea eliminar este colaborador?',
+                        icon: 'question',
+                        showCancelButton: true,
+                        confirmButtonText: 'Sí, eliminar',
+                        cancelButtonText: 'Cancelar'
+                    }).then((confirmResult) => {
+                        if (confirmResult.isConfirmed) {
+                            fetch(`colaborador/eliminar/${colaboradorId}`, {
+                                method: 'DELETE'
+                            }).then(response => response.json())
+                              .then(data => {
+                                  if (data.success) {
+                                      Swal.fire('Eliminado', 'El colaborador ha sido eliminado.', 'success')
+                                          .then(() => location.reload());
+                                  } else {
+                                      Swal.fire('Error', data.error, 'error');
+                                  }
+                              }).catch(error => {
+                                  Swal.fire('Error', 'Hubo un problema en la eliminación.', 'error');
+                              });
+                        }
+                    });
+                }
+            });
+        });
+    });
+}
+
+/**
  * Inicializa los tooltips de Bootstrap 5.
  */
 function inicializarTooltips() {
@@ -194,8 +265,10 @@ function inicializarFunciones() {
         mostrarNumeroDocumento();
     }
 
+    inicializarEliminarColaborador();
     inicializarTooltips();
 }
 
 // Invocar la inicialización automáticamente al cargar la página.
 document.addEventListener('DOMContentLoaded', inicializarFunciones);
+
