@@ -98,13 +98,6 @@
                                    title="Eliminar">
                                     <i class="fas fa-trash"></i>
                                 </a>
-							    <a href="<?= base_url('/colaborador/detalle/' . $usuario['id']) ?>" 
-							       class="btn btn-info btn-sm" 
-							       data-bs-toggle="tooltip" 
-							       data-bs-placement="top" 
-							       title="Ver Detalle">
-							        <i class="fas fa-eye"></i>
-							    </a>
 							</td>
 
 

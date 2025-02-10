@@ -21,7 +21,7 @@ $routes->setDefaultController('LoginController');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(true);
+$routes->setAutoRoute(false);
 $routes->get('no-permission', 'ErrorController::noPermission');
 
 
@@ -41,7 +41,12 @@ $routes->get('/plantilla', 'PlantillaController::index');
 $routes->get('/colaborador', 'ColaboradorController::index', ['filter' => 'permission']);
 $routes->get('/colaborador/registrar', 'ColaboradorController::registrar', ['filter' => 'permission']);
 $routes->post('/colaborador/registrar', 'ColaboradorController::registrarPost');
-$routes->get('colaborador/editar/(:num)', 'ColaboradorController::editar/$1');
+$routes->get('ubigeo/departamentos', 'UbigeoController::obtenerDepartamentos');
+$routes->get('ubigeo/provincias/(:num)', 'UbigeoController::obtenerProvincias/$1');
+$routes->get('ubigeo/distritos/(:num)/(:num)', 'UbigeoController::obtenerDistritos/$1/$2');
+
+
+$routes->get('colaborador/editar/(:num)', 'ColaboradorController::editar/$1', ['filter' => 'permission']);
 $routes->post('colaborador/actualizar/(:num)', 'ColaboradorController::actualizar/$1');
 $routes->post('colaborador/validar-clave', 'ColaboradorController::validarClave');
 $routes->delete('colaborador/eliminar/(:num)', 'ColaboradorController::eliminar/$1');

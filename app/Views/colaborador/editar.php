@@ -1,20 +1,20 @@
 <?= $header; ?>
 
-        <div class="container mt-4">
-            <h2>Editar Colaborador</h2>
-            <?php if (session()->getFlashdata('error')): ?>
-                <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
-            <?php endif; ?>
-            <?php if (session()->getFlashdata('success')): ?>
-                <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
-            <?php endif; ?>
+<div class="container mt-4">
+    <h2>Editar Colaborador</h2>
+    <?php if (session()->getFlashdata('error')): ?>
+        <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
+    <?php endif; ?>
+    <?php if (session()->getFlashdata('success')): ?>
+        <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
+    <?php endif; ?>
 
-            <form action="<?= base_url('/colaborador/actualizar/' . $colaborador['id']) ?>" method="post">
-                <?= csrf_field() ?>
+    <form action="<?= base_url('/colaborador/actualizar/' . $colaborador['id']) ?>" method="post">
+        <?= csrf_field() ?>
 
-                <?php
-            $oldTipoIdentificacion = session()->getFlashdata('input')['id_tipo_identificacion'] ?? $colaborador['id_tipo_identificacion'] ?? '';
-            $oldIdentificacionDescripcion = session()->getFlashdata('input')['identificacion_descripcion'] ?? $colaborador['identificacion_descripcion'] ?? '';
+        <?php
+        $oldTipoIdentificacion = session()->getFlashdata('input')['id_tipo_identificacion'] ?? $colaborador['id_tipo_identificacion'] ?? '';
+        $oldIdentificacionDescripcion = session()->getFlashdata('input')['identificacion_descripcion'] ?? $colaborador['identificacion_descripcion'] ?? '';
         ?>
 
         <div class="mb-3">
@@ -43,7 +43,6 @@
                 value="<?= esc($oldIdentificacionDescripcion) ?>">
         </div>
 
-
         <div class="mb-3">
             <label for="nombres" class="form-label">Nombres</label>
             <input type="text" class="form-control texto-mayuscula" id="nombres" name="nombres" value="<?= esc($colaborador['nombres'] ?? '') ?>" required>
@@ -64,47 +63,87 @@
             <input type="text" class="form-control" id="direccion" name="direccion" value="<?= esc($colaborador['direccion'] ?? '') ?>">
         </div>
 
+        <!-- Campos de Ubicación -->
+        <div class="row">
+             <!-- Departamento -->
+            <div class="col-md-4 mb-3">
+                <label for="departamento" class="form-label">Departamento</label>
+                <select id="departamento" name="departamento" class="form-control">
+                    <option value="">Seleccione un departamento</option>
+                    <?php foreach ($departamentos as $departamento): ?>
+                        <option value="<?= esc($departamento['codigo_departamento']) ?>" 
+                            <?= ($colaborador['departamento'] == $departamento['codigo_departamento']) ? 'selected' : '' ?>>
+                            <?= esc($departamento['nombre_departamento']) ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+
+            <!-- Provincia -->
+            <div class="col-md-4 mb-3">
+                <label for="provincia" class="form-label">Provincia</label>
+                <select class="form-control" id="provincia" name="provincia">
+                    <option value="">Seleccione una provincia</option>
+                    <?php foreach ($provincias as $provincia): ?>
+                        <option value="<?= esc($provincia['codigo_provincia']) ?>" 
+                            <?= ($colaborador['provincia'] == $provincia['codigo_provincia']) ? 'selected' : '' ?>>
+                            <?= esc($provincia['nombre_provincia']) ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+
+            <!-- Distrito -->
+            <div class="col-md-4 mb-3">
+                <label for="distrito" class="form-label">Distrito</label>
+                <select class="form-control" id="distrito" name="distrito">
+                    <option value="">Seleccione un distrito</option>
+                    <?php foreach ($distritos as $distrito): ?>
+                        <option value="<?= esc($distrito['codigo_distrito']) ?>" 
+                            <?= ($colaborador['distrito'] == $distrito['codigo_distrito']) ? 'selected' : '' ?>>
+                            <?= esc($distrito['nombre_distrito']) ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+        </div>
+
         <div class="mb-3">
             <label for="password" class="form-label">Contraseña</label>
             <div class="input-group">
-                <input 
-                    type="password" 
-                    class="form-control" 
-                    id="password" 
-                    name="password">
+                <input type="password" class="form-control" id="password" name="password">
                 <button type="button" class="btn btn-secondary" id="toggle-password" onclick="togglePassword()">Mostrar</button>
             </div>
             <small class="form-text text-muted">Deja en blanco si no deseas cambiar la contraseña.</small>
         </div>
 
-   <!-- Correos dinámicos -->
-<div class="mb-3">
-    <label for="emails" class="form-label">Correos Electrónicos</label>
-    <div id="emails-container">
-        <?php foreach ($colaborador['emails'] as $email): ?>
-            <div class="input-group mb-2">
-                <input type="email" class="form-control" name="emails[]" value="<?= esc($email) ?>" placeholder="Correo">
-                <button type="button" class="btn btn-danger remove-email">-</button>
+        <!-- Correos dinámicos -->
+        <div class="mb-3">
+            <label for="emails" class="form-label">Correos Electrónicos</label>
+            <div id="emails-container">
+                <?php foreach ($colaborador['emails'] as $email): ?>
+                    <div class="input-group mb-2">
+                        <input type="email" class="form-control" name="emails[]" value="<?= esc($email) ?>" placeholder="Correo">
+                        <button type="button" class="btn btn-danger remove-email">-</button>
+                    </div>
+                <?php endforeach; ?>
+                <button type="button" class="btn btn-success add-email">+ Agregar</button>
             </div>
-        <?php endforeach; ?>
-        <button type="button" class="btn btn-success add-email">+ Agregar</button>
-    </div>
-</div>
+        </div>
 
-<!-- Teléfonos dinámicos -->
-<div class="mb-3">
-    <label for="telefonos" class="form-label">Teléfonos</label>
-    <div id="telefonos-container">
-        <?php foreach ($colaborador['telefonos'] as $telefono): ?>
-            <div class="input-group mb-2">
-                <input type="text" class="form-control" name="telefonos[]" value="<?= esc($telefono) ?>" placeholder="Teléfono">
-                <button type="button" class="btn btn-danger remove-phone">-</button>
+        <!-- Teléfonos dinámicos -->
+        <div class="mb-3">
+            <label for="telefonos" class="form-label">Teléfonos</label>
+            <div id="telefonos-container">
+                <?php foreach ($colaborador['telefonos'] as $telefono): ?>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" name="telefonos[]" value="<?= esc($telefono) ?>" placeholder="Teléfono">
+                        <button type="button" class="btn btn-danger remove-phone">-</button>
+                    </div>
+                <?php endforeach; ?>
+                <button type="button" class="btn btn-success add-phone">+ Agregar</button>
             </div>
-        <?php endforeach; ?>
-        <button type="button" class="btn btn-success add-phone">+ Agregar</button>
-
-    </div>
-</div>
+        </div>
 
         <div class="mb-3">
             <label for="roles" class="form-label">Roles</label>

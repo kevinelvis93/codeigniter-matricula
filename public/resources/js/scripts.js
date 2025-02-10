@@ -45,6 +45,55 @@ function manejarTelefonos() {
 }
 
 /**
+ * Maneja la carga dinámica de departamentos, provincias y distritos.
+ */
+function manejarUbigeo() {
+    const departamentoSelect = document.getElementById("departamento");
+    const provinciaSelect = document.getElementById("provincia");
+    const distritoSelect = document.getElementById("distrito");
+
+    if (!departamentoSelect || !provinciaSelect || !distritoSelect) return;
+
+    const basePath = window.location.pathname.includes("/sistema") ? "/sistema" : "";
+
+    departamentoSelect.addEventListener("change", function () {
+        const departamentoId = this.value;
+        provinciaSelect.innerHTML = '<option value="">Seleccione una provincia</option>';
+        distritoSelect.innerHTML = '<option value="">Seleccione un distrito</option>';
+
+        if (departamentoId) {
+            fetch(`${basePath}/ubigeo/provincias/${departamentoId}`)
+                .then(response => response.text())
+                .then(html => provinciaSelect.innerHTML += html)
+                .catch(() => {});
+        }
+    });
+
+    provinciaSelect.addEventListener("change", function () {
+        const departamentoId = departamentoSelect.value;
+        const provinciaId = this.value;
+        distritoSelect.innerHTML = '<option value="">Seleccione un distrito</option>';
+
+        if (departamentoId && provinciaId) {
+            fetch(`${basePath}/ubigeo/distritos/${departamentoId}/${provinciaId}`)
+                .then(response => response.text())
+                .then(html => distritoSelect.innerHTML += html) // ✅ Corrección aplicada
+                .catch(() => {});
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+/**
  * Agrega un nuevo campo de correo electrónico.
  */
 function agregarCorreo(container, emailValue = '') {
@@ -255,6 +304,9 @@ function inicializarFunciones() {
 
     if (document.querySelector('#telefonos-container')) {
         manejarTelefonos();
+    }
+    if (document.getElementById('departamento')) {
+        manejarUbigeo();
     }
 
     if (document.querySelectorAll('.texto-mayuscula').length > 0) {

@@ -94,4 +94,9 @@ class BaseController extends Controller
         $funcionModel = new FuncionModel();
         $this->tipoIdentificacion = $funcionModel->obtenerTipoIdentificacion();
     }
+
+
+
+
+
 }

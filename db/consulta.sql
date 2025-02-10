@@ -18,6 +18,8 @@ SELECT * FROM ccp_tipo_identificacion;
 
 SELECT * FROM ccp_persona_identificacion;
 
+SELECT * FROM ccp_ubigeo_peru_departments;
+
 
 
 

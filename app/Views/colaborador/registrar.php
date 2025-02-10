@@ -55,6 +55,42 @@
             <input type="text" class="form-control texto-mayuscula" id="apellido_materno" name="apellido_materno" value="<?= old('apellido_materno') ?>" required>
         </div>
 
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="departamento" class="form-label">Departamento</label>
+                <select id="departamento" name="departamento" class="form-control">
+                    <option value="">Seleccione un departamento</option>
+                    <?php if (!empty($departamentos) && is_array($departamentos)): ?>
+                        <?php foreach ($departamentos as $departamento): ?>
+                            <option value="<?= esc($departamento['codigo_departamento']) ?>">
+                                <?= esc($departamento['nombre_departamento']) ?>
+                            </option>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <option value="">No hay departamentos disponibles</option>
+                    <?php endif; ?>
+                </select>
+            </div>
+
+            <!-- Provincia -->
+            <div class="col-md-4 mb-3">
+                <label for="provincia" class="form-label">Provincia</label>
+                <select class="form-control" id="provincia" name="provincia">
+                    <option value="">Seleccione una provincia</option>
+                </select>
+            </div>
+
+            <!-- Distrito -->
+            <div class="col-md-4 mb-3">
+                <label for="distrito" class="form-label">Distrito</label>
+                <select class="form-control" id="distrito" name="distrito">
+                    <option value="">Seleccione un distrito</option>
+                </select>
+            </div>
+        </div>
+
+
+
         <div class="mb-3">
             <label for="direccion" class="form-label">Dirección</label>
             <input type="text" class="form-control" id="direccion" name="direccion" value="<?= old('direccion') ?>">
